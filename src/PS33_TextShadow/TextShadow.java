@@ -15,7 +15,7 @@ public class TextShadow extends Application {
     @Override
     public void start(Stage stage) {
 
-        stage.setTitle("Text drop shadow PS33");
+        stage.setTitle("Text shadow Problem Set33");
 
         VBox container = new VBox();
         container.setStyle("-fx-background-color: blue;" +

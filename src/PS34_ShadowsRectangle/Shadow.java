@@ -27,12 +27,12 @@ public class Shadow extends Application {
                 "-fx-padding: 50,50,50,50; " +
                 "-fx-alignment: center");
 
-        Label heading = new Label("ADJUSTABLE RECTANGLE DROP SHADOW");
+        Label heading = new Label("DROP SHADOW");
         heading.setFont(new Font("Times New Roman", 18));
 
-        HBox sliderContainer = new HBox();
+        VBox sliderContainer = new VBox();
         sliderContainer.setStyle("-fx-spacing: 8;" +
-                "-fx-alignment: center;" +
+                "-fx-alignment: baseline-left;" +
                 "-fx-pref-height: 70");
 
         Label h2 = new Label("Radius");
@@ -41,18 +41,18 @@ public class Shadow extends Application {
         h2.setTranslateX(10);
 
         Slider radius = new Slider();
-        radius.setOrientation(Orientation.VERTICAL);
+        radius.setOrientation(Orientation.HORIZONTAL);
 
         Label h3 = new Label("Off Set");
         h3.setFont(new Font("Times New Roman", 15));
-        h3.setRotate(270);
+        h3.setRotate(360);
         h3.setTranslateX(10);
 
         Slider offSetX = new Slider();
-        offSetX.setOrientation(Orientation.VERTICAL);
+        offSetX.setOrientation(Orientation.HORIZONTAL);
 
         Slider offSetY = new Slider();
-        offSetY.setOrientation(Orientation.VERTICAL);
+        offSetY.setOrientation(Orientation.HORIZONTAL);
 
         Label h4 = new Label("RGB");
         h4.setFont(new Font("Times New Roman", 15));
@@ -60,13 +60,13 @@ public class Shadow extends Application {
         h4.setTranslateX(10);
 
         Slider red = new Slider();
-        red.setOrientation(Orientation.VERTICAL);
+        red.setOrientation(Orientation.HORIZONTAL);
 
         Slider green = new Slider();
-        green.setOrientation(Orientation.VERTICAL);
+        green.setOrientation(Orientation.HORIZONTAL);
 
         Slider blue = new Slider();
-        blue.setOrientation(Orientation.VERTICAL);
+        blue.setOrientation(Orientation.HORIZONTAL);
 
         sliderContainer.getChildren().addAll(h2, radius, h3, offSetX,offSetY, h4, red, green, blue);
 
